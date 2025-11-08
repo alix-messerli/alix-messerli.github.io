@@ -1,0 +1,17 @@
+---
+section_title: Compétences Techniques
+skills:
+  - domain: Infrastructure
+    list: "Windows Server, Linux Server, Virtualisation (VMware, Proxmox, Nutanix)"
+
+  - domain: Réseau
+    list: "Switching, Routage, Firewall"
+  
+  - domain: Scripting
+    list: "PowerShell, Bash, Python, Ansible, Terraform"
+
+  - domain: Autre outils
+    list: "Git, Docker, GitLab CI, GitHub Actions"
+
+  - domain: Observability
+    list: "Prometheus, Grafana"

@@ -1,0 +1,17 @@
+---
+section_title: Skills
+skills:
+  - domain: Infrastructure
+    list: "Windows Server, Linux Server, Virtualization (VMware, Proxmox, Nutanix)"
+
+  - domain: Network
+    list: "Switching, Routing, Firewall"
+
+  - domain: Scripting
+    list: "PowerShell, Bash, Python, Ansible, Terraform"
+
+  - domain: Other Tools
+    list: "Git, Docker, GitLab CI, GitHub Actions"
+
+  - domain: Observability
+    list: "Prometheus, Grafana"

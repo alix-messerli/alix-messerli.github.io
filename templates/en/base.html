@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ fullname }}</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <script src="../static/js/script.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#portfolio" data-role="link"  class="link">Portfolio</a></li>
+            <li><a href="#cv" data-role="link" class="link">CV</a></li>
+        </ul>
+        <label class="switch">
+            <input data-theme-toggle aria-label="Change to light theme" type="checkbox" checked>
+            <span class="slider round"></span>
+        </label>
+    </nav>
+    
+    <!-- Portfolio section -->
+    {{ portfolio_content }}
+
+    <!-- CV section -->
+    {{ cv_content }}
+
+</body>
+</html>

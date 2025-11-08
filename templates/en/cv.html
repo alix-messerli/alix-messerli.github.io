@@ -1,0 +1,91 @@
+<section id="cv" data-page="cv" class="cv-section page">
+    <header>
+        <div class="personal-info">
+            <ul id="left">
+                <img src="../assets/portrait.png" alt="{{  general.fullname }}" class="profile-pic">
+            </ul>
+            <ul id="right">
+                <h1>{{ general.fullname }}</h1>
+                <li><span class="letter-circle">M</span> {{ general.personal.email }}<br><span class="letter-circle">T</span>  {{ general.personal.phone }}</li>  
+                <p>{{ general.objective }}</p>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <!-- <section class="info">
+        </section> -->
+        <!-- <section class="objective">
+            <h2 class="section-title">Objectif</h2>
+            <p>{{ general.objective }}</p> 
+        </section> -->
+        <section class="education">
+            <h2 class="section-title">Education</h2>
+            <div class="table-container">
+                <table>
+                    {% for item in formations %}
+                    <tr>    
+                        <td data-label="Année">{{ item.years }}</td>
+                        <td data-label="Statut">{{ item.time if item.time }}</td>
+                        <td data-label="Diplôme"><span class="xp_title">{{ item.diplom.title }}</span><br><span class="xp_precision">{{ item.diplom.precision }}</span><br><span class="xp_place">{{ item.diplom.place }}</span></td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </section>
+
+        <section class="experience">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="table-container">
+                <table>
+                    {% for item in experiences %}
+                    <tr>
+                        <td data-label="Année">{{ item.years }}</td>
+                        <td data-label="Durée">{{ item.time if item.time }}</td>
+                        <td data-label="Poste"><span class="xp_title">{{ item.job.title }}</span><br><span class="xp_precision">{{ item.job.precision }}</span><br><span class="xp_place">{{ item.job.place }}</span></td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="table-container">
+                <table>
+                    {% for item in skills %}
+                    <tr>
+                        <td data-label="Domaine">{{item.domain}}</td>
+                        <td data-label="Compétences"> {{ item.list }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </section>
+
+        <section class="languages">
+            <h2 class="section-title">Languages</h2>
+            <div class="table-container">
+                <table>
+                    {% for item in languages %}
+                    <tr>
+                        <td data-label="Langue">{{ item.name }}</td>
+                        <td data-label="Niveau">{{ item.level }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </section>
+        <section class="references">
+            <h2 class="section-title">Links</h2>
+            <div class="table-container" id="contacts">
+                <table id="contact-table">
+                    <tr>
+                        <td><a href="https://www.linkedin.com/in/yann-fanha/" target="_blank"><img class="linkedin-img"></a></td>
+                        <td><a href="https://github.com/YFanha/" target="_blank"><img class="github-img"></a></td>
+                        <td><a href="mailto:yann@fanha.ch" target="_blank"><img class="mail-img" ></a></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </div>
+</section>

@@ -1,0 +1,38 @@
+---
+section_title: Expériences Professionnelles
+experiences:
+  - years: 2024
+    time: (2 mois)
+    job:
+      title: Stagiaire Informaticien
+      precision: Administrateur réseaux et systèmes
+      place: ARC IT SA, 1400 Yverdon-les-Bains
+      description: Gestion de serveurs Window, Configuration de switchs et de firewalls Fortinet, Mise en place de VPN, Gestion de tenant M365, Support utilisateur niveau 1-2
+  - years: 2024
+    time: (2 mois)
+    job:
+        title: Informaticien
+        precision: Administrateur réseaux et systèmes
+        place: Haute Ecole d'Ingenierie et de Gestion du canton de Vaud, 1400 Yverdon-les-Bains
+        description: Automatisation de tâches via Ansible et/ou Python (déploiement d'agent, modification de mot de passe en les intégrants dans un coffre virtuel, application de configuration de sécurité), Câblage et mise en service de nouveaux équipements.
+  - years: 2023
+    time: (2 mois)
+    job:
+        title: Informaticien
+        precision: Administrateur réseaux et systèmes
+        place: Haute Ecole d'Ingenierie et de Gestion du canton de Vaud, 1400 Yverdon-les-Bains
+        description: Automatisation de tâches via Ansible, Monitoring de cycles de vie de serveurs Linux
+  - years: 2022-2023
+    time: (12 mois)
+    job:
+      title: Stagiaire Informaticien
+      precision: Support informatique
+      place: Haute Ecole d'Ingenierie et de Gestion du canton de Vaud, 1400 Yverdon-les-Bains
+      description: Support 1 et 2ème niveau, Installation de matériel informatique standard HEIG-VD. Implémentation de sauvegarde Veeam. Production de script de sauvegardes consistantes pour des base de données SQL
+  - years: 2017 - ...
+    time:
+    job:
+      title: Arbitre
+      precision: Football - 2ème ligue régionale
+      place: Association Suisse de Football (ASF), Canton de Vaud
+      description:

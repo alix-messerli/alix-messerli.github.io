@@ -1,0 +1,31 @@
+<section id="portfolio" data-page="portfolio" class="portfolio-section page">
+    <div class="container">
+        <section>
+            <h2 class="section-title">Portfolio</h2>
+            <!-- <p>Projets réalisés</p> -->
+            <div class="portfolio-items">
+
+                {% for project in projects %}
+                    {% if project.link %}
+                        <a class="portfolio-item" href="{{ project.link }}" target="_blank"><h3><img class="github-img">
+                    {% else %}
+                        <div class="portfolio-item"><h3>
+                    {% endif %}
+                            {{ project.title }}</h3>
+                            <p>{{ project.description }}</p>
+                            <ul class="project-technologies">
+                                {% for techno in project.technologies%}
+                                <li>{{ techno }}</li>
+                                {% endfor %}
+                            </ul>
+                    {% if project.link %}
+                        </a>
+                    {% else %}
+                        </div>
+                    {% endif %}
+                {% endfor %}
+
+            </div>
+        </section>
+    </div>
+</section>

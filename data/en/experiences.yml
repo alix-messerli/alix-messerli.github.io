@@ -1,0 +1,42 @@
+---
+section_title: Work Experience
+experiences:
+  - years: 2024
+    time: (2 months)
+    job:
+      title: IT Intern
+      precision: Network and Systems Administrator
+      place: ARC IT SA, 1400 Yverdon-les-Bains
+      description: Management of Windows servers, configuration of switches and Fortinet firewalls, setup of VPNs, M365 tenant management, level 1-2 user support
+
+  - years: 2024
+    time: (2 months)
+    job:
+      title: IT Specialist
+      precision: Network and Systems Administrator
+      place: School of Engineering and Management of the Canton of Vaud (HEIG-VD), 1400 Yverdon-les-Bains
+      description: Task automation using Ansible and/or Python (agent deployment, password updates integrated into a virtual vault, application of security configurations), cabling and commissioning of new equipment
+
+  - years: 2023
+    time: (2 months)
+    job:
+      title: IT Specialist
+      precision: Network and Systems Administrator
+      place: School of Engineering and Management of the Canton of Vaud (HEIG-VD), 1400 Yverdon-les-Bains
+      description: Task automation with Ansible, monitoring the lifecycle of Linux servers
+
+  - years: 2022-2023
+    time: (12 months)
+    job:
+      title: IT Intern
+      precision: IT Support
+      place: School of Engineering and Management of the Canton of Vaud (HEIG-VD), 1400 Yverdon-les-Bains
+      description: Level 1 and 2 support, installation of standard HEIG-VD IT equipment, implementation of Veeam backup solutions, development of consistent backup scripts for SQL databases
+
+  - years: 2017 - present
+    time:
+    job:
+      title: Referee
+      precision: Football – Regional 2nd League
+      place: Swiss Football Association (ASF), Canton of Vaud
+      description:

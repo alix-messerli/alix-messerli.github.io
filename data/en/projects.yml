@@ -1,0 +1,41 @@
+---
+projects:
+  - title: Nutanix Cluster Deployment Automation (Diploma Project)
+    description: Automation of a Nutanix cluster deployment using Ansible and Terraform (+ Nutanix Foundation). This project was carried out as part of my diploma thesis.
+    technologies:
+      - Terraform
+      - Ansible
+      - Nutanix
+      - GitLab CI
+    link: https://github.com/YFanha/ntnx-nova-open-source
+
+  - title: Infrastructure Deployment with Terraform
+    description: Infrastructure deployment on AWS using Terraform and Ansible to host containerized applications.
+    technologies:
+      - Terraform
+      - Ansible
+      - AWS
+      - Git
+    link: https://github.com/YFanha/INFRA-DEPLOY-RIA
+
+  - title: Observability with Prometheus & Grafana
+    description: Deployment of Prometheus and Grafana for monitoring devices and services, with automated Discord alerting and service restart using Python.
+    technologies:
+      - Linux
+      - Prometheus
+      - Grafana
+      - Nginx
+      - Git
+    link: https://github.com/YFanha/MON1-Prometheus/
+
+  - title: Individual Practical Work (TPI)
+    description: Deployment of Veeam Backup & Replication in a test environment and implementation of various backup strategies to protect different types of data.
+    technologies:
+      - Veeam
+    link: 
+
+  - title: vSphere Cluster Deployment (Pre-TPI)
+    description: Deployment and configuration of a VMware vSphere cluster with vSAN. This cluster was designed to host my TPI project.
+    technologies:
+      - VMware
+    link:
