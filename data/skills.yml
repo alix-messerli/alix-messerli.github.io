@@ -1,17 +1,16 @@
 ---
 section_title: Compétences Techniques
 skills:
-  - domain: Infrastructure
-    list: "Windows Server, Linux Server, Virtualisation (VMware, Proxmox, Nutanix)"
+  - domain: CAO / DAO
+    list: "Inventor, SOLIDWORKS"
 
-  - domain: Réseau
-    list: "Switching, Routage, Firewall"
+  - domain: FAO
+    list: "ESPRIT"
   
-  - domain: Scripting
-    list: "PowerShell, Bash, Python, Ansible, Terraform"
+  - domain: GED
+    list: "SAP, Inloox"
 
-  - domain: Autre outils
-    list: "Git, Docker, GitLab CI, GitHub Actions"
+  - domain: Programation
+    list: "Python, Structured Text "
 
-  - domain: Observability
-    list: "Prometheus, Grafana"
+  
