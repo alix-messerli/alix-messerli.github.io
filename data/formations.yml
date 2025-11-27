@@ -1,0 +1,26 @@
+section_title: Formations
+formations:
+  - years: 2023 - 2025
+    time: (en cours)
+    diplom: 
+      title: Diplôme Techniciens ES Génie mécanique 
+      precision: Productique
+      place: Centre Professionnel du Nord Vaudois (CPNV), 1450 Sainte-Croix
+  - years: 2023 - 2025
+    time: 
+    diplom: 
+      title: Etudiant Ingénieur en Génie Mécanique 
+      precision: Système Industrielle
+      place: Haute Ecole d’Ingénieur et de Gestion du Canton de Vaud (HEIG-VD) 1401 Yverdon-les-Bains
+  - years: 2021 - 2022 
+    time: 
+    diplom: 
+      title: Maturité professionnelle post CFC 
+      precision: Technique
+      place: Centre Professionnel Nord Vaudois (CPNV), 1400 Yverdon-les-Bains
+  - years: 2017 - 2021
+    time: 
+    diplom: 
+      title: CFC Polymécanicien 
+      precision: Profil E
+      place: Login formation professionnelle SA, 1400 Yverdon-les-Bains
