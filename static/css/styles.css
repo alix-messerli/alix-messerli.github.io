@@ -324,40 +324,48 @@ h2::after {
     /* Barre d'actions fixe en bas */
     .actions {
         position: fixed;
-        top: auto; right: 12px; left: 12px;
-        bottom: calc(12px + env(safe-area-inset-bottom));
+        top: auto; right: 10px; left: 10px;
+        bottom: 10px;
+        bottom: calc(10px + env(safe-area-inset-bottom, 0px));
         z-index: 10;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 46px 46px;
         gap: 6px;
         padding: 6px;
         border-radius: 16px;
-        background: color-mix(in srgb, var(--page) 88%, transparent);
-        -webkit-backdrop-filter: blur(12px);
-        backdrop-filter: blur(12px);
+        background: var(--page);
         border: 1px solid var(--rule);
         box-shadow: 0 8px 28px -10px rgba(0, 0, 0, .35);
     }
-    .mobile-only { display: inline-flex !important; }
-    .action-link, .actions .print-btn, .actions .icon-btn {
-        flex: 1;
+    .mobile-only { display: flex !important; }
+    .actions > * {
+        -webkit-appearance: none;
+        appearance: none;
+        display: flex;
+        align-items: center;
         justify-content: center;
-        min-height: 44px;
+        gap: 6px;
+        min-width: 0;
+        height: 44px;
+        margin: 0;
+        padding: 0 6px;
+        border: 0;
         border-radius: 11px;
-        font-size: .82rem;
+        font: 600 14px/1 var(--font);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
-    .actions .icon-btn { flex: 0 0 48px; }
-    .action-link {
-        align-items: center; gap: 6px;
-        font: 600 .82rem var(--font);
-        color: var(--page);
-        background: var(--blue);
-    }
+    .actions .print-btn span { display: none; }
+    .action-link { color: #fff; background: var(--blue); }
+    [data-theme="dark"] .action-link { color: #0e1218; }
     .action-link svg {
-        width: 16px; height: 16px;
-        fill: none; stroke: currentColor; stroke-width: 1.8;
+        width: 17px; height: 17px; flex: none;
+        fill: none; stroke: currentColor; stroke-width: 1.9;
         stroke-linecap: round; stroke-linejoin: round;
     }
-    .action-link:hover { color: var(--page); }
+    .actions .icon-btn svg, .actions .print-btn svg { width: 18px; height: 18px; }
+    .action-link:hover { color: #fff; text-decoration: none; }
 
     /* Sections */
     section { margin-top: 30px; }
