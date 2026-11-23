@@ -2,6 +2,7 @@
    Structure et bleu du CV Word, version modernisée. */
 
 :root {
+    color-scheme: light;
     --blue: #4472c4;
     --blue-dark: #2f5597;
     --blue-soft: #edf2fb;
@@ -11,13 +12,30 @@
     --muted: #8a93a3;
     --rule: #e6eaf1;
     --bg: #f3f5f9;
+    --page: #ffffff;
     --font: "Inter", "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+}
+
+
+[data-theme="dark"] {
+    color-scheme: dark;
+    --blue: #7ea3e6;
+    --blue-dark: #b9cdf3;
+    --blue-soft: #1f2b40;
+    --blue-line: #34466a;
+    --text: #e6e9ef;
+    --text-soft: #b3bac7;
+    --muted: #7f8899;
+    --rule: #2a3242;
+    --bg: #0e1218;
+    --page: #161b24;
 }
 
 * { box-sizing: border-box; }
 
 body {
     margin: 0;
+    transition: background-color .2s, color .2s;
     background: var(--bg);
     color: var(--text);
     font: 15px/1.55 var(--font);
@@ -32,7 +50,7 @@ a:hover { color: var(--blue); }
 .page {
     max-width: 880px;
     margin: 0 auto;
-    background: #fff;
+    background: var(--page);
     border-radius: 14px;
     padding: 52px 60px 36px;
     box-shadow: 0 1px 2px rgba(28, 35, 51, .05), 0 18px 48px -18px rgba(47, 85, 151, .25);
@@ -57,9 +75,6 @@ a:hover { color: var(--blue); }
     height: 144px;
     object-fit: cover;
     object-position: center top;
-    border-radius: 14px;
-    background: var(--blue-soft);
-    box-shadow: 0 0 0 4px #fff, 0 0 0 5px var(--blue-line);
 }
 
 h1 {
@@ -94,9 +109,13 @@ h1 span { color: var(--blue); }
     stroke-linecap: round; stroke-linejoin: round;
 }
 
-.print-btn {
+.actions {
     position: absolute;
     top: 0; right: 0;
+    display: flex;
+    gap: 8px;
+}
+.print-btn, .icon-btn {
     display: inline-flex; align-items: center; gap: 6px;
     font: 600 .8rem var(--font);
     color: var(--blue);
@@ -107,8 +126,17 @@ h1 span { color: var(--blue); }
     cursor: pointer;
     transition: background .15s, color .15s;
 }
-.print-btn:hover { background: var(--blue); color: #fff; }
-.print-btn:hover svg { stroke: #fff; }
+.icon-btn { padding: 7px 9px; }
+.icon-btn svg {
+    width: 16px; height: 16px;
+    fill: none; stroke: var(--blue); stroke-width: 1.8;
+    stroke-linecap: round; stroke-linejoin: round;
+}
+.icon-btn .sun { display: none; }
+[data-theme="dark"] .icon-btn .sun { display: block; }
+[data-theme="dark"] .icon-btn .moon { display: none; }
+.print-btn:hover, .icon-btn:hover { background: var(--blue); color: var(--page); }
+.print-btn:hover svg, .icon-btn:hover svg { stroke: var(--page); }
 
 /* ---------- Sections ---------- */
 section { margin-top: 34px; }
@@ -156,7 +184,7 @@ h2::after {
     left: 0; top: 7px;
     width: 9px; height: 9px;
     border-radius: 50%;
-    background: #fff;
+    background: var(--page);
     border: 2px solid var(--blue);
 }
 .what::after {
@@ -268,7 +296,7 @@ h2::after {
     .header { grid-template-columns: 1fr; gap: 18px; }
     .photo img { width: 110px; height: 113px; }
     .details { grid-template-columns: 1fr; }
-    .print-btn { top: 4px; }
+    .actions { top: 4px; }
     .item { grid-template-columns: 1fr; gap: 4px; }
     .when { flex-direction: row; align-items: center; padding-left: 24px; }
     .what::after { top: 20px; bottom: -48px; }
@@ -279,10 +307,16 @@ h2::after {
 /* ---------- Impression / PDF A4 ---------- */
 @page { size: A4; margin: 12mm 14mm 10mm; }
 @media print {
+    :root, [data-theme="dark"] {
+        color-scheme: light;
+        --blue: #4472c4; --blue-dark: #2f5597; --blue-soft: #edf2fb; --blue-line: #c9d6ee;
+        --text: #1c2333; --text-soft: #4b5568; --muted: #8a93a3; --rule: #e6eaf1;
+        --bg: #fff; --page: #fff;
+    }
     html { font-size: 9.2pt; }
     body { background: #fff; padding: 0; font-size: 9.2pt; line-height: 1.42; }
     .page { max-width: none; padding: 0; border: 0; border-radius: 0; box-shadow: none; }
-    .print-btn, .foot { display: none; }
+    .actions, .foot { display: none; }
     .header { grid-template-columns: 30mm 1fr; gap: 7mm; padding-bottom: 5mm; }
     .photo img { width: 30mm; height: 31mm; }
     h1 { font-size: 21pt; }
