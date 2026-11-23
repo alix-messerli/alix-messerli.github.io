@@ -1,16 +1,30 @@
-section_title: Expériences Professionnelles
+---
+section_title: Expériences professionnelles
 experiences:
-  - years: 2022 - 2023
-    time: 
-    job:
-      title: Dessinateur constructeur CFF SA 
-      precision: Développement de moyen de production
-      place: Ateliers CFF, 1400 Yverdon-les-Bains
-      description:  Certificat CE, Analyse de risques, Amélioration de l'érgonomie, 5S Keizen, Addidive Manufacturing
-      years: 04.2023 - 08.2023
-    time: 
-    job:
-      title: Ecole de recrue 
-      precision: Ecoles circulation et transport 47 (E CT47)
-      place: Place d’armes, 1744 Drognens
-      description:  Automobiliste
+  - years: "[À COMPLÉTER] – en cours"
+    title: Stagiaire en gestion de production
+    company: Kamec SA
+    place: "[Lieu À COMPLÉTER]"
+    summary: Sous-traitance mécanique — prototypes, pièces unitaires et petites séries
+    tasks:
+      - Étude d'implantation d'un nouveau tour CNC et analyse des flux de production
+      - Développement d'une GMAO sous Excel/VBA pour la maintenance préventive du parc CNC
+      - Outil de gestion de stock des huiles et produits de maintenance
+      - Modernisation de la fiche de suivi de production et outil de création d'offres
+
+  - years: 04.2023 – 08.2023
+    title: École de recrues
+    company: Écoles circulation et transport 47 (E CT 47)
+    place: Place d'armes, 1744 Drognens
+    summary: Automobiliste
+
+  - years: 2022 – 2023
+    title: Dessinateur constructeur
+    company: CFF SA — Ateliers d'Yverdon
+    place: 1400 Yverdon-les-Bains
+    summary: Développement de moyens de production
+    tasks:
+      - Certification CE et analyses de risques
+      - Amélioration de l'ergonomie des postes de travail
+      - Démarche 5S / Kaizen
+      - Fabrication additive

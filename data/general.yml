@@ -1,11 +1,17 @@
 ---
 general:
-    fullname: Alix Messerli
-    objective: Je recherche une opportunité dans la gestion de production dans l’industrie où je pourrai élargir et mettre à profit mes compétences.
-    personal: 
-        age: 24 ans
-        status: Célibataire
-        nationality: Suisse
-        driver_license: Permis de conduire (B,E)
-        phone:  078 / 906 05 69
-        email: alix.messerli01@gmail.com 
+  fullname: Alix Messerli
+  headline: Futur technicien ES en génie mécanique — productique
+  objective: >-
+    Polymécanicien de formation, je me spécialise dans la production industrielle :
+    flux d'atelier, maintenance, gestion de stock et outils de suivi de production.
+    Je recherche une opportunité dans la gestion de production où je pourrai
+    mettre à profit et élargir mes compétences.
+  personal:
+    nationality: Suisse
+    driver_license: Permis B et BE
+    phone: 078 906 05 69
+    phone_link: "+41789060569"
+    email: alix.messerli01@gmail.com
+  links:
+    linkedin: https://www.linkedin.com/in/alix-messerli-235281214/

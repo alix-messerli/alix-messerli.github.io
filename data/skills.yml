@@ -1,15 +1,13 @@
 ---
-section_title: Compétences Techniques
+section_title: Compétences
 skills:
   - domain: CAO / DAO
-    list: "Inventor, SOLIDWORKS"
-
+    list: [Inventor, SOLIDWORKS]
   - domain: FAO
-    list: "ESPRIT"
-  
-  - domain: GED
-    list: "SAP, Inloox"
-
-
-
-  
+    list: [ESPRIT, GibbsCAM]
+  - domain: ERP & gestion de projet
+    list: [SAP, InLoox]
+  - domain: Bureautique & automatisation
+    list: [Excel avancé, VBA]
+  - domain: Méthodes
+    list: [5S, Kaizen, Analyse de risques, Marquage CE, Maintenance préventive]
