@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% set active = "portfolio" %}
+{% block title %}Portfolio{% endblock %}
+{% block content %}
+<main class="page portfolio">
+    <header class="portfolio-head">
+        <div>
+            <p class="eyebrow">Portfolio</p>
+            <h1>Projets de conception</h1>
+            <p class="headline">Une sélection de projets réalisés en formation et en entreprise.</p>
+        </div>
+        <div class="actions">
+            <button type="button" class="icon-btn" onclick="toggleTheme()" aria-label="Basculer entre mode clair et mode sombre" title="Mode clair / sombre">
+                <svg class="moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+                <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2 M12 20v2 M4.9 4.9l1.4 1.4 M17.7 17.7l1.4 1.4 M2 12h2 M20 12h2 M4.9 19.1l1.4-1.4 M17.7 6.3l1.4-1.4"/></svg>
+            </button>
+        </div>
+    </header>
+
+    {% if projects %}
+    <div class="projects">
+        {% for p in projects %}
+        <article class="project">
+            {% if p.image %}<img src="{{ p.image }}" alt="{{ p.title }}" loading="lazy">{% endif %}
+            <div class="project-body">
+                <p class="project-meta">{{ p.year }}{% if p.context %} · {{ p.context }}{% endif %}</p>
+                <h2 class="project-title">{{ p.title }}</h2>
+                <p>{{ p.description }}</p>
+                {% if p.tags %}<ul class="chips">{% for t in p.tags %}<li>{{ t }}</li>{% endfor %}</ul>{% endif %}
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18 M5 21V10l7-5 7 5v11 M9 21v-6h6v6"/></svg>
+        <p class="empty-title">Projets bientôt disponibles</p>
+        <p>Cette section présentera prochainement mes projets de conception.</p>
+        <a class="empty-link" href="index.html">← Retour au CV</a>
+    </div>
+    {% endif %}
+
+    <footer class="foot">Mis à jour le {{ updated.strftime("%d.%m.%Y") }}</footer>
+</main>
+{% endblock %}

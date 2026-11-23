@@ -38,13 +38,16 @@ def build():
     # Empreinte du CSS : force les navigateurs à recharger le style après chaque modification
     with open("static/css/styles.css", "rb") as f:
         css_version = hashlib.md5(f.read()).hexdigest()[:8]
-    html = env.get_template("base.html").render(**load_data(), updated=date.today(), css_version=css_version)
+    data = load_data()
+    pages = {"index.html": "cv.html", "portfolio.html": "portfolio.html"}
 
     if os.path.isdir(OUTPUT_DIR):
         shutil.rmtree(OUTPUT_DIR)
     os.makedirs(OUTPUT_DIR)
-    with open(os.path.join(OUTPUT_DIR, "index.html"), "w", encoding="utf-8") as f:
-        f.write(html)
+    for output, template in pages.items():
+        html = env.get_template(template).render(**data, updated=date.today(), css_version=css_version)
+        with open(os.path.join(OUTPUT_DIR, output), "w", encoding="utf-8") as f:
+            f.write(html)
     for item in ASSETS:
         shutil.copytree(item, os.path.join(OUTPUT_DIR, item))
     # Empêche GitHub Pages de passer le site par Jekyll

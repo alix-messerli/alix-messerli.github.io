@@ -1,0 +1,10 @@
+---
+# Projets de conception affichés dans l'onglet Portfolio.
+# Exemple d'entrée (à dupliquer) :
+#  - title: Nom du projet
+#    year: 2025
+#    context: Projet scolaire CPNV / CFF / Kamec SA…
+#    image: assets/projets/nom-image.jpg
+#    description: Courte description du projet, objectifs et résultat.
+#    tags: [SOLIDWORKS, Fabrication additive]
+projects: []
