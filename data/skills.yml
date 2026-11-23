@@ -4,10 +4,10 @@ skills:
   - domain: CAO, DAO
     list: [Inventor, SOLIDWORKS]
   - domain: FAO
-    list: [ESPRIT, GibbsCAM]
+    list: [ESPRIT]
   - domain: GED, ERP
     list: [SAP, InLoox]
   - domain: Bureautique
     list: [Word, Excel (VBA), PowerPoint]
   - domain: Méthodes
-    list: [5S, Kaizen, Analyse de risques, Marquage CE, Maintenance préventive]
+    list: [5S, Kaizen, Analyse de risques, Marquage CE]
