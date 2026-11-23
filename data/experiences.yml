@@ -1,28 +1,27 @@
 ---
 section_title: Expériences professionnelles
 experiences:
-  - years: "[À COMPLÉTER] – en cours"
-    title: Stagiaire en gestion de production
-    company: Kamec SA
-    place: "[Lieu À COMPLÉTER]"
-    summary: Sous-traitance mécanique — prototypes, pièces unitaires et petites séries
+  - years: 08.2026 – 11.2026
+    title: Stagiaire
+    precision: Gestion de production
+    lines:
+      - Kamec SA
     tasks:
-      - Étude d'implantation d'un nouveau tour CNC et analyse des flux de production
-      - Développement d'une GMAO sous Excel/VBA pour la maintenance préventive du parc CNC
-      - Outil de gestion de stock des huiles et produits de maintenance
-      - Modernisation de la fiche de suivi de production et outil de création d'offres
+      - Analyse des flux de production
+      - Développement d'outils de suivi de la production
+      - Implantation de machines
 
   - years: 04.2023 – 08.2023
     title: École de recrues
-    company: Écoles circulation et transport 47 (E CT 47)
-    place: Place d'armes, 1744 Drognens
-    summary: Automobiliste
+    precision: Écoles circulation et transport 47 (E CT 47)
+    lines:
+      - Place d'armes, 1744 Drognens
 
   - years: 2022 – 2023
     title: Dessinateur constructeur
-    company: CFF SA — Ateliers d'Yverdon
-    place: 1400 Yverdon-les-Bains
-    summary: Développement de moyens de production
+    precision: Développement de moyens de production
+    lines:
+      - Chemins de fer fédéraux (CFF), 1400 Yverdon-les-Bains
     tasks:
       - Certification CE et analyses de risques
       - Amélioration de l'ergonomie des postes de travail

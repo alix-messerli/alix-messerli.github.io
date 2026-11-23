@@ -1,13 +1,13 @@
 ---
-section_title: Compétences
+section_title: Compétences informatiques
 skills:
-  - domain: CAO / DAO
+  - domain: CAO, DAO
     list: [Inventor, SOLIDWORKS]
   - domain: FAO
     list: [ESPRIT, GibbsCAM]
-  - domain: ERP & gestion de projet
+  - domain: GED, ERP
     list: [SAP, InLoox]
-  - domain: Bureautique & automatisation
-    list: [Excel avancé, VBA]
+  - domain: Bureautique
+    list: [Word, Excel (VBA), PowerPoint]
   - domain: Méthodes
     list: [5S, Kaizen, Analyse de risques, Marquage CE, Maintenance préventive]

@@ -3,10 +3,7 @@ section_title: Langues
 languages:
   - name: Français
     level: Langue maternelle
-    score: 5
   - name: Anglais
-    level: B2 (auto-évalué)
-    score: 4
+    level: B2 | Auto-évalué
   - name: Allemand
-    level: B1 (auto-évalué)
-    score: 3
+    level: B1 | Auto-évalué
