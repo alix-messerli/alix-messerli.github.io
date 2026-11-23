@@ -1,4 +1,5 @@
 """Génère le CV statique dans le dossier `website/` à partir des fichiers YAML de `data/`."""
+import hashlib
 import os
 import shutil
 from datetime import date
@@ -34,7 +35,10 @@ def build():
         trim_blocks=True,
         lstrip_blocks=True,
     )
-    html = env.get_template("base.html").render(**load_data(), updated=date.today())
+    # Empreinte du CSS : force les navigateurs à recharger le style après chaque modification
+    with open("static/css/styles.css", "rb") as f:
+        css_version = hashlib.md5(f.read()).hexdigest()[:8]
+    html = env.get_template("base.html").render(**load_data(), updated=date.today(), css_version=css_version)
 
     if os.path.isdir(OUTPUT_DIR):
         shutil.rmtree(OUTPUT_DIR)
